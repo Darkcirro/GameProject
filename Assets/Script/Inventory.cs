@@ -201,12 +201,14 @@ public class Inventory : MonoBehaviour {
 		int i = 0;
 		Vector2 mousePosition = new Vector2 (Input.mousePosition.x, Screen.height - Input.mousePosition.y);
 
+
 		for(int y = 0; y < slotsY; y++){
 			for(int x = 0; x < slotsX; x++){
 				Rect slotRect = new Rect(x * 100 + 90, y * 92+250, 90, 90);
 				GUI.Box (slotRect, "",skin.GetStyle("Slot"));
 				slotsMonster [i] = monsterInventory [i];
 				Monster monster = slotsMonster [i];
+
 				if (slotsMonster [i].monsterName != null) {
 					GUI.DrawTexture (slotRect, slotsMonster [i].monsterIcon);
 					if (slotRect.Contains (mousePosition)) {
@@ -229,6 +231,7 @@ public class Inventory : MonoBehaviour {
 
 						if(currentEvent.isMouse && currentEvent.type == EventType.MouseDown && currentEvent.button == 1){
 							//print("Remove > " + slotsMonster[i].monsterName);
+							print("Count " + slotsMonster.Count);
 							RemoveMonster (slotsMonster[i], i );
 						}
 					}
@@ -290,20 +293,27 @@ public class Inventory : MonoBehaviour {
 
 
 	public void AddRandomMonster(){
-		if (monsterInventory [monsterInventory.Count - 1].monsterName == null) {
-			for (int i = 0; i < monsterInventory.Count; i++) {
-				if (monsterInventory [i].monsterName == null) {
-					randomID = Random.Range (0, databaseMon.monsters.Count);
-					monsterInventory [i] = databaseMon.monsters [randomID];
-					print ("Name : " + databaseMon.monsters [randomID].monsterName + "\n ID : " + randomID + "");
+		for (int j = 0; j < monsterInventory.Count; j++) {
+			if (monsterInventory [j].monsterName == null) {
+				for (int i = 0; i < monsterInventory.Count; i++) {
+					if (monsterInventory [i].monsterName == null) {
+						randomID = Random.Range (0, databaseMon.monsters.Count);
+						monsterInventory [i] = databaseMon.monsters [randomID];
+						print ("Name : " + databaseMon.monsters [randomID].monsterName + "\n ID : " + randomID + "");
+						break;
+					}
+				}
+				openGashaCheck = true;
+				if (monsterInventory [j].monsterName != null)
+					break;
+			} else {
+				if (j == monsterInventory.Count - 1) {
+					inventoryFull = true;
 					break;
 				}
 			}
-			openGashaCheck = true;
-		} else {
-			//print ("Error! Inventory is full.");
-			inventoryFull = true;
 		}
+
 	}
 
 	void RemoveItem(int id){

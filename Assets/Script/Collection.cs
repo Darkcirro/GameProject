@@ -50,7 +50,6 @@ public class Collection : MonoBehaviour {
 				if (slotsMonster [i].monsterName != null) {
 					GUI.DrawTexture (slotRect, slotsMonster [i].monsterIcon);
 					if (slotRect.Contains(mousePosition)) {
-						print("Inside");
 						toolTip = createToolTipMon (monsterInventory [i]);
 						showTooltip = true;
 					} else if (toolTip == "")

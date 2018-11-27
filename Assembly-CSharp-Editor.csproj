@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\ChangeVolumeTest.cs" />
+     <Compile Include="Assets\Editor\ShowToolTipTest.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/Work/การเรียน/ปี 3 เทอม 1/CPE 327 Software Engineer/Project/Breeding Simulator/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
