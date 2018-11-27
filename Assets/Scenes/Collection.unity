@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46bfd8bbafab85e4abe2992ca8e26a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotsX: 8
+  slotsX: 12
   slotsY: 4
   skin: {fileID: 11400000, guid: da21a192e9df22a43836db0dbbb1a1c3, type: 2}
   monsterInventory: []

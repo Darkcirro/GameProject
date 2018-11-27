@@ -25,8 +25,7 @@ public class Inventory : MonoBehaviour {
 	public List<Monster> slotsMonster = new List<Monster>();
 	private MonsterDatabase databaseMon;
 
-	private bool changeInventoryMon = true;
-	private bool changeInventoryItem = false;
+	private bool changeInventory = false;
 
 	private bool sceneCheck = true;
 	public string scene;
@@ -65,9 +64,6 @@ public class Inventory : MonoBehaviour {
 		if (scene == "Gashapon") {
 			gashaButton.interactable = true;
 		}
-		/*if (slotsMonster.Count == 0) {
-
-		}*/
 		AddItem (0);
 		AddItem (1);
 		AddItem (2);
@@ -75,37 +71,31 @@ public class Inventory : MonoBehaviour {
 		
 
 	void OnGUI(){
+		Vector2 mousePosition = new Vector2 (Input.mousePosition.x, Screen.height - Input.mousePosition.y);
+
 		if (scene == "Gashapon")
 			sceneCheck = false;
 		else
 			sceneCheck = true;
 
-		/*if (GUI.Button (new Rect (40, 700, 375, 63), "Save")) {
-			SaveInventory ();
-		}
-		/*if (GUI.Button (new Rect (40, 450, 100, 40), "Load")) {
-			LoadInventory ();
-		}*/
 		toolTip = "";
 		GUI.skin = skin;
 		if (sceneCheck) {
-			if (changeInventoryItem)
+			if (changeInventory)
 				DrawInventory ();
-			if (changeInventoryMon)
+			if (!changeInventory)
 				DrawInventoryMonster ();
-		
+				
 			if (GUI.Button (new Rect (40, 150, 375, 63), "Monster Collection")) {
-				changeInventoryItem = false;
-				changeInventoryMon = true;
-			}
+				changeInventory = false;
 
+			}
 			if (GUI.Button (new Rect (445, 150, 375, 63), "Item Collection")) {
-				changeInventoryMon = false;
-				changeInventoryItem = true;
+				changeInventory = true;
 			}
 
 			if (showTooltip) {
-				GUI.Box (new Rect (900, 250, 370, 370), toolTip, skin.GetStyle ("Tooltip"));
+				GUI.Box (new Rect (mousePosition.x+5f,mousePosition.y +5f, 370, 370), toolTip, skin.GetStyle ("Tooltip"));
 			}
 			if (draggingItem) {
 				GUI.DrawTexture (new Rect (Event.current.mousePosition.x, Event.current.mousePosition.y, 100, 100), draggedItem.itemIcon);
@@ -154,6 +144,7 @@ public class Inventory : MonoBehaviour {
 	void DrawInventory(){
 		Event currentEvent = Event.current;
 		int i = 0;
+		Vector2 mousePosition = new Vector2 (Input.mousePosition.x, Screen.height - Input.mousePosition.y);
 
 		for(int y = 0; y < slotsY; y++){
 			for(int x = 0; x < slotsX; x++){
@@ -163,7 +154,7 @@ public class Inventory : MonoBehaviour {
 				Item item = slots [i];
 				if (slots [i].itemName != null) {
 					GUI.DrawTexture (slotRect, slots [i].itemIcon);
-					if (slotRect.Contains (Event.current.mousePosition)) {
+					if (slotRect.Contains (mousePosition)) {
 						/*toolTip = createToolTip (slots [i]);
 						showTooltip = true;*/
 						if (currentEvent.button == 0 && currentEvent.type == EventType.MouseDrag && !draggingItem) {
@@ -208,6 +199,8 @@ public class Inventory : MonoBehaviour {
 	void DrawInventoryMonster(){
 		Event currentEvent = Event.current;
 		int i = 0;
+		Vector2 mousePosition = new Vector2 (Input.mousePosition.x, Screen.height - Input.mousePosition.y);
+
 		for(int y = 0; y < slotsY; y++){
 			for(int x = 0; x < slotsX; x++){
 				Rect slotRect = new Rect(x * 100 + 90, y * 92+250, 90, 90);
@@ -216,7 +209,7 @@ public class Inventory : MonoBehaviour {
 				Monster monster = slotsMonster [i];
 				if (slotsMonster [i].monsterName != null) {
 					GUI.DrawTexture (slotRect, slotsMonster [i].monsterIcon);
-					if (slotRect.Contains (Event.current.mousePosition)) {
+					if (slotRect.Contains (mousePosition)) {
 						if (currentEvent.button == 0 && currentEvent.type == EventType.MouseDrag && !draggingMonster) {
 							draggingMonster = true;
 							prevIndex2 = i;
@@ -235,7 +228,7 @@ public class Inventory : MonoBehaviour {
 						}
 
 						if(currentEvent.isMouse && currentEvent.type == EventType.MouseDown && currentEvent.button == 1){
-							print("Remove > " + slotsMonster[i].monsterName);
+							//print("Remove > " + slotsMonster[i].monsterName);
 							RemoveMonster (slotsMonster[i], i );
 						}
 					}
@@ -308,7 +301,7 @@ public class Inventory : MonoBehaviour {
 			}
 			openGashaCheck = true;
 		} else {
-			print ("Error! Inventory is full.");
+			//print ("Error! Inventory is full.");
 			inventoryFull = true;
 		}
 	}
@@ -343,7 +336,7 @@ public class Inventory : MonoBehaviour {
 			case 1:
 			{
 				//MonsterStats.IncreaseStat (// HP, Attack, Critical chance);
-				print("USE Potion : " + item.itemName);
+				//print("USE Potion : " + item.itemName);
 				break;
 			}
 			/*case 1:

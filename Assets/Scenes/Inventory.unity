@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf12f9f9570e13447b7f076011af60d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotsX: 8
+  slotsX: 12
   slotsY: 4
   skin: {fileID: 11400000, guid: da21a192e9df22a43836db0dbbb1a1c3, type: 2}
   inventory: []
