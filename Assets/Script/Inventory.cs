@@ -105,7 +105,7 @@ public class Inventory : MonoBehaviour {
 			}
 
 			if (showTooltip) {
-				GUI.Box (new Rect (Event.current.mousePosition.x + 15f, Event.current.mousePosition.y, 300, 300), toolTip, skin.GetStyle ("Tooltip"));
+				GUI.Box (new Rect (900, 250, 370, 370), toolTip, skin.GetStyle ("Tooltip"));
 			}
 			if (draggingItem) {
 				GUI.DrawTexture (new Rect (Event.current.mousePosition.x, Event.current.mousePosition.y, 100, 100), draggedItem.itemIcon);

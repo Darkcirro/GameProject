@@ -28,7 +28,7 @@ public class Collection : MonoBehaviour {
 		GUI.skin = skin;
 		DrawAllMonster ();
 		if (showTooltip) {
-			GUI.Box (new Rect (Event.current.mousePosition.x + 15f, Event.current.mousePosition.y, 300, 250), toolTip, skin.GetStyle ("Tooltip"));
+			GUI.Box (new Rect (900, 200, 400, 370), toolTip, skin.GetStyle ("Tooltip"));
 		}
 	}
 	//***************************************************************************************************************************************************
