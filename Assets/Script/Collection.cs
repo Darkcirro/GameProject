@@ -13,9 +13,8 @@ public class Collection : MonoBehaviour {
 	public List<Monster> slotsMonster = new List<Monster>();
 	private MonsterDatabase databaseMon;
 
-
+	public int test;
 	// Use this for initialization
-
 
 	void Start () {
 		for(int i = 0; i < (slotsX * slotsY); i++){
@@ -69,12 +68,16 @@ public class Collection : MonoBehaviour {
 	public void AddAllMonster(){
 		for (int i = 0; i < databaseMon.monsters.Count; i++) {
 			monsterInventory[i] = databaseMon.monsters[i];
-			print (databaseMon.monsters.Count);
 		}
 	}
 
-	// Update is called once per frame
-	void Update () {
-		
+	// Unit Test
+	public int Test_AddAllMonster(){
+		int j;
+		for (j = 0; j < databaseMon.monsters.Count; j++) {
+			monsterInventory[j] = databaseMon.monsters[j];
+		}
+		return databaseMon.monsters.Count;
 	}
+
 }

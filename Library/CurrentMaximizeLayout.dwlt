@@ -20,10 +20,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 508, y: 342}
-  m_MaxSize: {x: 12008, y: 8042}
+  m_MinSize: {x: 506, y: 342}
+  m_MaxSize: {x: 12006, y: 8042}
   vertical: 0
-  controlID: 7323
+  controlID: 1850
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -47,7 +47,7 @@ MonoBehaviour:
     x: 206.40001
     y: 92.8
     width: 1038
-    height: 434
+    height: 433
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
@@ -81,24 +81,24 @@ MonoBehaviour:
       x: 0
       y: 17
       width: 1038
-      height: 417
-    m_Scale: {x: 0.67871094, y: 0.67871094}
-    m_Translation: {x: 519, y: 208.50002}
+      height: 416
+    m_Scale: {x: 0.6770833, y: 0.6770833}
+    m_Translation: {x: 519, y: 208}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -764.6849
+      x: -766.5231
       y: -307.2
-      width: 1529.3698
+      width: 1533.0461
       height: 614.4
     m_MinimalGUI: 1
-  m_defaultScale: 0.67871094
+  m_defaultScale: 0.6770833
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1297.5, y: 542.5}
+  m_LastWindowPixelSize: {x: 1297.5, y: 541.25}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 342}
   m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-  controlID: 7324
+  controlID: 1851
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,11 +146,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1246
-    height: 455
+    height: 454
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 7325
+  controlID: 1852
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,9 +168,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 204
-    height: 455
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 454
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -199,13 +199,13 @@ MonoBehaviour:
     x: 0
     y: 92.8
     width: 202
-    height: 434
+    height: 433
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6a380000
+    m_SelectedIDs: 6a070000
     m_LastClickedID: 0
-    m_ExpandedIDs: e4fbffff00000000
+    m_ExpandedIDs: 1c22ffff1c23ffff5a24ffffce26ffff4028ffff7a2bffffcc32ffff3e34ffff5438ffff763dffff1442ffff8c43ffff124affff7e6bffff086effff3478fffff07cffff8c7fffff8c80ffff7483ffffde8affff8a8bffff2c8cffff268dffff7c8effff0691ffff4c93ffffaa95ffffcc9cffffee9dffff9c9fffffcaa2ffffb8a5ffff9aa7ffff12a9ffffbaabffffb6afffff3cb2ffff2ab8fffff4baffff54bdffff7cbeffff30c2fffff4c4ffffecc5ffff2cc8ffffe0c9ffffa4ceffffa2cfffffc8d1ffff3ad3ffffccfbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -246,9 +246,9 @@ MonoBehaviour:
     x: 204
     y: 0
     width: 1042
-    height: 455
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 454
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
@@ -557,9 +557,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 455
+    y: 454
     width: 1246
-    height: 276
+    height: 277
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
@@ -590,9 +590,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 547.2
+    y: 546.4
     width: 1244
-    height: 255
+    height: 256
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -617,10 +617,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 22}
-    m_SelectedIDs: 900b0000
-    m_LastClickedID: 2960
-    m_ExpandedIDs: 0000000066090000060d0000762e0000782e000000ca9a3b
+    scrollPos: {x: 0, y: 21}
+    m_SelectedIDs: 940b0000
+    m_LastClickedID: 2964
+    m_ExpandedIDs: 000000006a0900000a0d00007a2e00007c2e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -648,7 +648,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 26f6feff
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000066090000060d0000762e0000782e000000ca9a3b
+    m_ExpandedIDs: 000000006a0900000a0d00007a2e00007c2e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -673,8 +673,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 6a380000
-    m_LastClickedInstanceID: 14442
+    m_SelectedInstanceIDs: 6a070000
+    m_LastClickedInstanceID: 1898
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000d448ffff520b0000ae6effff
     m_RenameOverlay:
@@ -724,9 +724,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 547.2
+    y: 546.4
     width: 1244
-    height: 255
+    height: 256
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
@@ -928,9 +928,9 @@ MonoBehaviour:
     - id: '[Breeding Simulator][suite]'
       name: Breeding Simulator
       fullName: Breeding Simulator
-      resultStatus: 1
-      duration: 0.0702011
-      messages: 
+      resultStatus: 2
+      duration: 0.0362175
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -939,12 +939,189 @@ MonoBehaviour:
       isSuite: 1
       categories: []
       parentID: 
-    m_ResultText: 
+    - id: "[D:/Work/\u0E01\u0E32\u0E23\u0E40\u0E23\u0E35\u0E22\u0E19/\u0E1B\u0E35
+        3 \u0E40\u0E17\u0E2D\u0E21 1/CPE 327 Software Engineer/Project/Breeding Simulator/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+      name: Assembly-CSharp-Editor.dll
+      fullName: "D:/Work/\u0E01\u0E32\u0E23\u0E40\u0E23\u0E35\u0E22\u0E19/\u0E1B\u0E35
+        3 \u0E40\u0E17\u0E2D\u0E21 1/CPE 327 Software Engineer/Project/Breeding Simulator/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll"
+      resultStatus: 2
+      duration: 0.0164946
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentID: '[Breeding Simulator][suite]'
+    - id: '[Assembly-CSharp-Editor][CollectionTest][suite]'
+      name: CollectionTest
+      fullName: CollectionTest
+      resultStatus: 2
+      duration: 0.0105849
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentID: "[D:/Work/\u0E01\u0E32\u0E23\u0E40\u0E23\u0E35\u0E22\u0E19/\u0E1B\u0E35
+        3 \u0E40\u0E17\u0E2D\u0E21 1/CPE 327 Software Engineer/Project/Breeding Simulator/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: '[Assembly-CSharp-Editor][CollectionTest.AddAllMonster_Test]'
+      name: AddAllMonster_Test
+      fullName: CollectionTest.AddAllMonster_Test
+      resultStatus: 2
+      duration: 0.0033294
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
+        is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
+        your script can inherit from ScriptableObject or no base class at all\r\n"
+      stacktrace: "  at Collection.Test_AddAllMonster () [0x0002b] in D:\\Work\\\u0E01\u0E32\u0E23\u0E40\u0E23\u0E35\u0E22\u0E19\\\u0E1B\u0E35
+        3 \u0E40\u0E17\u0E2D\u0E21 1\\CPE 327 Software Engineer\\Project\\Breeding
+        Simulator\\Assets\\Script\\Collection.cs:78 \r\n  at CollectionTest.AddAllMonster_Test
+        () [0x00008] in D:\\Work\\\u0E01\u0E32\u0E23\u0E40\u0E23\u0E35\u0E22\u0E19\\\u0E1B\u0E35
+        3 \u0E40\u0E17\u0E2D\u0E21 1\\CPE 327 Software Engineer\\Project\\Breeding
+        Simulator\\Assets\\Editor\\CollectionTest.cs:11 \r\n  at (wrapper managed-to-native)
+        System.Reflection.MonoMethod:InternalInvoke (object,object[],System.Exception&)\r\n
+        \ at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+        culture) [0x000d0] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs:222 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentID: '[Assembly-CSharp-Editor][CollectionTest][suite]'
+    - id: '[Assembly-CSharp-Editor][GashaponTest][suite]'
+      name: GashaponTest
+      fullName: GashaponTest
+      resultStatus: 1
+      duration: 0.0307054
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentID: "[D:/Work/\u0E01\u0E32\u0E23\u0E40\u0E23\u0E35\u0E22\u0E19/\u0E1B\u0E35
+        3 \u0E40\u0E17\u0E2D\u0E21 1/CPE 327 Software Engineer/Project/Breeding Simulator/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: '[Assembly-CSharp-Editor][GashaponTest.AddRandomMonster_Test]'
+      name: AddRandomMonster_Test
+      fullName: GashaponTest.AddRandomMonster_Test
+      resultStatus: 1
+      duration: 0.0030352
+      messages: 
+      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
+        is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
+        your script can inherit from ScriptableObject or no base class at all\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentID: '[Assembly-CSharp-Editor][GashaponTest][suite]'
+    - id: '[Assembly-CSharp-Editor][InventoryTest][suite]'
+      name: InventoryTest
+      fullName: InventoryTest
+      resultStatus: 1
+      duration: 0.0492373
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentID: "[D:/Work/\u0E01\u0E32\u0E23\u0E40\u0E23\u0E35\u0E22\u0E19/\u0E1B\u0E35
+        3 \u0E40\u0E17\u0E2D\u0E21 1/CPE 327 Software Engineer/Project/Breeding Simulator/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: '[Assembly-CSharp-Editor][InventoryTest.ItemInventory_Test]'
+      name: ItemInventory_Test
+      fullName: InventoryTest.ItemInventory_Test
+      resultStatus: 1
+      duration: 0.0288585
+      messages: 
+      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
+        is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
+        your script can inherit from ScriptableObject or no base class at all\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentID: '[Assembly-CSharp-Editor][InventoryTest][suite]'
+    - id: '[Assembly-CSharp-Editor][InventoryTest.ItemSlot_Test]'
+      name: ItemSlot_Test
+      fullName: InventoryTest.ItemSlot_Test
+      resultStatus: 1
+      duration: 0.0020029
+      messages: 
+      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
+        is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
+        your script can inherit from ScriptableObject or no base class at all\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentID: '[Assembly-CSharp-Editor][InventoryTest][suite]'
+    - id: '[Assembly-CSharp-Editor][InventoryTest.monsterInventory_Test]'
+      name: monsterInventory_Test
+      fullName: InventoryTest.monsterInventory_Test
+      resultStatus: 1
+      duration: 0.0019273
+      messages: 
+      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
+        is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
+        your script can inherit from ScriptableObject or no base class at all\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentID: '[Assembly-CSharp-Editor][InventoryTest][suite]'
+    - id: '[Assembly-CSharp-Editor][InventoryTest.slotsMonster_Test]'
+      name: slotsMonster_Test
+      fullName: InventoryTest.slotsMonster_Test
+      resultStatus: 1
+      duration: 0.0022525
+      messages: 
+      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
+        is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively,
+        your script can inherit from ScriptableObject or no base class at all\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentID: '[Assembly-CSharp-Editor][InventoryTest][suite]'
+    m_ResultText: 'CollectionTest (0.011s)
+
+      ---
+
+      One or more child tests had errors'
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
+      m_SelectedIDs: 58c518cf
+      m_LastClickedID: -820460200
       m_ExpandedIDs: 19f7616b70f4936bffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0

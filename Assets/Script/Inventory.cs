@@ -35,7 +35,7 @@ public class Inventory : MonoBehaviour {
 
 	public Button gashaButton;
 	private Monster newMonster;
-	private bool inventoryFull = false;
+	public bool inventoryFull = false;
 	private bool inventoryCheck = false;
 
 	public Texture2D Pic;
@@ -155,8 +155,6 @@ public class Inventory : MonoBehaviour {
 				if (slots [i].itemName != null) {
 					GUI.DrawTexture (slotRect, slots [i].itemIcon);
 					if (slotRect.Contains (mousePosition)) {
-						/*toolTip = createToolTip (slots [i]);
-						showTooltip = true;*/
 						if (currentEvent.button == 0 && currentEvent.type == EventType.MouseDrag && !draggingItem) {
 							draggingItem = true;
 							prevIndex = i;
@@ -196,7 +194,7 @@ public class Inventory : MonoBehaviour {
 		}
 	}
 	//*****************************************************************************************************************************************************
-	void DrawInventoryMonster(){
+	public void DrawInventoryMonster(){
 		Event currentEvent = Event.current;
 		int i = 0;
 		Vector2 mousePosition = new Vector2 (Input.mousePosition.x, Screen.height - Input.mousePosition.y);
@@ -304,8 +302,9 @@ public class Inventory : MonoBehaviour {
 					}
 				}
 				openGashaCheck = true;
-				if (monsterInventory [j].monsterName != null)
+				if (monsterInventory [j].monsterName != null) {
 					break;
+				}
 			} else {
 				if (j == monsterInventory.Count - 1) {
 					inventoryFull = true;
@@ -313,7 +312,6 @@ public class Inventory : MonoBehaviour {
 				}
 			}
 		}
-
 	}
 
 	void RemoveItem(int id){
@@ -393,11 +391,30 @@ public class Inventory : MonoBehaviour {
 		GUI.Label (new Rect (Screen.width / 2-100, Screen.height / 2 - 200,1000,200), "YOU GOT",skin.GetStyle("label"));
 	}
 
-
-
-	/*void LoadInventory(){
-		//for (int i = 0; i < inventory.Count; i++) {
-			inventory [i] = PlayerPrefs.GetInt ("Inventory " + i, -1) >= 0 ? database.items [PlayerPrefs.GetInt ("Inventory " + i)] : new Item (); 
+	//unit Test
+	public int Test_ItemSlot(int slotX,int slotY){
+		for(int i = 0; i < (slotX * slotY); i++){
+			slots.Add (new Item());
 		}
-	}*/
+		return slots.Count;
+	}
+	public int Test_ItemInventory(int slotX,int slotY){
+		for(int i = 0; i < (slotX * slotY); i++){	
+			inventory.Add (new Item ()); 
+		}
+		return inventory.Count;
+	}
+	public int Test_slotsMonster(int slotX,int slotY){
+		for(int i = 0; i < (slotX * slotY); i++){
+			slotsMonster.Add (new Monster());
+		}
+		return slotsMonster.Count;
+	}
+	public int Test_monsterInventory(int slotX,int slotY){
+		for(int i = 0; i < (slotX * slotY); i++){
+			monsterInventory.Add (new Monster ()); 
+		}
+		return monsterInventory.Count;
+	}
+
 }

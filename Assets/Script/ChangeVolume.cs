@@ -18,10 +18,14 @@ public class ChangeVolume : MonoBehaviour {
 	public void SetVolume(float sliderValue){
 		audioMixer.SetFloat (parameter, Mathf.Log10(sliderValue) * 20);
 		PlayerPrefs.SetFloat (mySlider, sliderValue);
+	}
 
-		/*float test = Mathf.Log10 (sliderValue) * 20;
-		Debug.Log (test);
-		return test;*/
+	public float Test_SetVolume(float sliderValue){
+		/*audioMixer.SetFloat (parameter, Mathf.Log10(sliderValue) * 20);
+		PlayerPrefs.SetFloat (mySlider, sliderValue);*/
+
+		float test = Mathf.Log10 (sliderValue) * 20;
+		return test;
 
 	}
 
