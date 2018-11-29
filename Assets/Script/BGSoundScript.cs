@@ -23,5 +23,9 @@ public class BGSoundScript : MonoBehaviour {
 		{
 			Destroy(this.gameObject);
 		}
+		if (SceneManager.GetActiveScene().name == "Intro")
+		{
+			Destroy(this.gameObject);
+		}
 	}
 }

@@ -417,4 +417,36 @@ public class Inventory : MonoBehaviour {
 		return monsterInventory.Count;
 	}
 
+
+	public bool Test_AddRandomMonster(){
+		List<int> array = new List<int>();
+		bool check=false;
+		for(int i = 0; i < (12 * 4); i++){
+			array.Add (0); 
+		}
+		for (int k = 0; k < array.Count + 1; k++) {
+			for (int j = 0; j < array.Count; j++) {
+				if (array [j] == 0) {
+					for (int i = 0; i < 48; i++) {
+						if (array [i] == 0) {
+							array [i] = 1;
+							break;
+						}
+					}
+					openGashaCheck = true;
+					if (array [j] != 0) {
+						check = false;
+						break;
+					}
+				} else {
+					if (j == 47) {
+						check = true;
+						break;
+					}
+				}
+			}
+		}
+		return check;
+	}
+		
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class MonsterDatabase : MonoBehaviour {
 	public List<Monster> monsters = new List<Monster>();
 
-	void Awake(){
+	public void Awake(){
 		monsters.Add (new Monster ("Cloude", 0, "It look like clound.", 1, 10, 0));
 		monsters.Add (new Monster ("Horn", 1, "It look like devil but It's too weak.", 2, 5, 0)); 
 		monsters.Add (new Monster ("Three", 2, "It has three eye.", 1, 10, 30)); 
@@ -15,6 +15,7 @@ public class MonsterDatabase : MonoBehaviour {
 		monsters.Add (new Monster ("Eevee", 6, "So cute!!!", 1, 1, 100));
 		monsters.Add (new Monster ("Pikachu", 7, "A mouse with electric thunder", 20, 58, 10));
 	}
+
 
 
 }
